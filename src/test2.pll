@@ -1,0 +1,43 @@
+program example 	# 主程序定义
+const begin 	    # 常量定义，定义时必需赋初值
+	real pi := 3.14;	# 圆周率
+end
+var begin			# 变量定义，定义时不能赋初值	
+	integer a;
+	integer b;
+	char c;
+	bool d;
+	real r;		# 圆的半径
+	real area;  # 圆的面积
+end
+begin	# 程序开始		
+	a := 1;					#赋值语句
+	b := a;					#赋值语句
+	area := pi*r*r;			#算数表达式
+	d := area > 10.0; 		#关系表达式(逻辑表达式)
+	d := d or true;			#逻辑表达式
+
+	# if-else语句
+	if(d) then
+	begin
+		c = 'Y';
+		d := d and (a <> b) or false;
+	end
+	else begin
+		c = 'N';
+	end
+
+	# while-do语句
+	while(d = false) do
+	begin
+		# if-else嵌套
+		if(a >= b) then
+		begin
+			r = pi+(3.14-r*area);
+			a = a + b*a;
+		end
+		else begin
+			# 啥也不干，但是形式得有。。
+		end
+	end
+end   # 程序结束

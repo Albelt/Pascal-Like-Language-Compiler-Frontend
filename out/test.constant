@@ -1,0 +1,7 @@
+real 8 3.14
+integer 4 1
+real 8 3.0
+real 8 10.0
+real 8 10.4
+char 1 Y
+char 1 N
